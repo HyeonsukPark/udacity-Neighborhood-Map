@@ -1,0 +1,136 @@
+body,
+html {
+    height: 100%;
+    line-height: 2em;
+    margin: auto;
+    font-family: 'Handlee', cursive;
+}
+.container {
+    height: 100%;
+    width: 100%;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #BDBDBD;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: gray;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+.h-1 {
+    margin-top: 0;
+    padding-top: 13px;
+    color: #FAFAFA;
+    padding-left: 10px;
+}
+.header {
+    color: #424242;
+    background: #08298A;
+    background: linear-gradient(to right, #0101DF, #CECEF6);
+    opacity: 0.6;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+}
+.search-section {
+    height: 100%;
+    background-color: #E6E6E6;
+    text-align: left;
+    margin-right: 0;
+}
+h2 {
+    color: #424242;
+    padding-left: 15px;
+    margin-top: 0;
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+#map {
+    bottom: 0px;
+    height: 100%;
+    top: 60px;
+    width: 100%;
+    position: absolute;
+    right: 0px;
+}
+.list-window {
+    list-style-type: none;
+    background: #E6E6E6;
+    padding: 10px;
+}
+ul li {
+    background: #08298A;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+ul li:hover,
+ul li.hover {
+    background: #F2F2F2;
+    color: #000000;
+}
+.search-bar {
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+input {
+    border-radius: 5px;
+    height: 40px;
+}
+.info-title {
+    font-size: 16px;
+    color: #FA5858;
+}
+.info-paragraph {
+    color: #424242;
+    font-size: 15px;
+}
+
+#wiki-ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#wiki-list {
+    background: white;
+    color: blue;
+}
+
+#wiki-li {
+    background: white;
+}
+
+ul li a {
+    text-decoration: none;
+     background: white;
+    color: blue;
+}
+
+.cafe-info {
+    margin-left: 12px;
+}

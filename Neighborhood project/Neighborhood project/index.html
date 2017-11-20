@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+
+
+    <title>Neighborhood Map</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1 class="h-1"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+     </span>Lisbon Map</h1>
+
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <div class="search-section">
+                <h2>Search</h2>
+                <form class="search-bar">
+                    <input placeholder="Search" type="search" data-bind="textInput: writeText, event: {keyup: filterEvent}">
+                </form>
+
+                <h2>Where to go</h2>
+                <ul class="list-window" data-bind="foreach: lisbonList">
+                    <li data-bind="click: openInfoWindow">
+                        <span class="span-title" data-bind="text: title"></span>
+                        <span class="span-add" data-bind="text: address"></span>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <div id="map"></div>
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/knockout-3.4.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyAK9-mO8Z442bTyIqqigoc1m--spHoSJ3E&v=3&callback=initMap" onerror="mapError()">
+    </script>
+
+</body>
+
+</html>
